@@ -1,24 +1,23 @@
-
-import './App.css';
-import Info from './Info.js';
+import "./App.css";
+import Info from "./Info.js";
 
 function App() {
   return (
     <div className="App">
-      <Info/>
-      <AddItem/>
-      <AddItem/>
-      <AddItem/>
+      <Info />
+      <AddItem />
+      <AddItem />
+      <AddItem />
     </div>
   );
 }
 
-function AddItem(){
+function AddItem() {
   const value = "textfield";
-  return(
+  return (
     <form>
       <label for="text-form">Type Something:</label>
-      <input type= "text" value ={value} id="text-form"/>
+      <input type="text" value={value} id="text-form" />
     </form>
   );
 }
