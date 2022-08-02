@@ -4,21 +4,22 @@ import Info from "./Info.js";
 function App() {
   return (
     <div className="App">
-      <Info />
-      <AddItem />
-      <AddItem />
-      <AddItem />
+      <Info />  
+      <AddItem text="Tim" number ={2}/>
+      <AddItem text= "Joe" />
+      <AddItem text="Test"/>
     </div>
   );
 }
 
-function AddItem() {
-  const value = "textfield";
+function AddItem(props) {
   return (
     <form>
       <label for="text-form">Type Something:</label>
-      <input type="text" value={value} id="text-form" />
+      <input type="text" value={props.text} id="text-form" />
+      <p>{props.number}</p>
     </form>
   );
 }
+
 export default App;
