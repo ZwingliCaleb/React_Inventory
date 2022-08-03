@@ -1,6 +1,11 @@
 import React from "react";
 
 class Info extends React.Component{
+  constructor(props){
+    super(props);
+    console.log(props);
+  }
+
   render() {
     const title = "This is my title.";
     const showTitle = true;

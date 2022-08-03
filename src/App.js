@@ -22,4 +22,8 @@ function AddItem(props) {
   );
 }
 
+AddItem.defaultProps = {
+  number: 2,
+  text : "default",
+}
 export default App;
