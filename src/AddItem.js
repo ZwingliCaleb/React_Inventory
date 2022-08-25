@@ -34,7 +34,7 @@ function AddItem(props){
                 <button type="button" onClick={addItemButtonPressed}>Add Item</button>
             </form>
             <p>Name: {name}</p>
-            <p>Price: {price}</p>
+            <p>Price: {price}</p> 
             <p>Type: {type}</p>
             <p>Brand: {brand}</p>
         </div>
